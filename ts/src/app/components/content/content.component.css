@@ -1,0 +1,127 @@
+.content-container {
+  padding: 1.25rem 2.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100vh;
+
+  .titulo-trabalho {
+    font-family: Roboto;
+    color: #ed7839;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  gap: 2rem;
+}
+
+.box-2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+
+  .buttons-box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 8px;
+
+    button {
+      background-color: #ed7839;
+      color: #ffffff;
+      border-radius: 4px;
+      border: none;
+      height: 2.5rem;
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18.75px;
+      text-align: center;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #ff833f;
+      }
+    }
+  }
+  .citacao {
+    font-family: Roboto;
+    color: #ed7839;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-align: end;
+    margin-top: 10px;
+  }
+}
+
+.box-detalhe {
+  height: 27.3rem;
+  margin-top: 16px;
+  border: solid 1.5px #ececec;
+  border-radius: 3px 3px 0px 0px;
+
+  p {
+    margin: 5px 0 0 0;
+    font-family: Quicksand;
+    font-weight: 400;
+    color: #5c5c5c;
+    text-align: left;
+  }
+
+  .titulo-detalhe {
+    background-color: #fdf1eb;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    color: #4e4e4e;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .conteudo-detalhe {
+    margin-top: 18px;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    .apresentacao {
+      font-size: 12px;
+      gap: 10px;
+    }
+
+    .autores {
+      font-size: 14px;
+    }
+
+    .universidades {
+      margin-top: 16px;
+      font-size: 12px;
+      color: #ada0a0;
+    }
+  }
+}
