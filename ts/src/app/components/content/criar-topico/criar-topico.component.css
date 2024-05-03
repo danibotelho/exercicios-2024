@@ -1,0 +1,51 @@
+.box-discusao {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.informativo-discussao {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ed7839;
+}
+
+.box-icone {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.btn-create-topic {
+  background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+  width: 8.25rem;
+  height: 2rem;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2px;
+  border: none;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+
+  &:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, #eea64e 0%, #fc8840 90%);
+  }
+
+  .divisoria{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 1px;
+    background: #e7e7e7;
+    width: 100%;
+  }
+}

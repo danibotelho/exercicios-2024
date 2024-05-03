@@ -1,3 +1,19 @@
-<div>
-  <div> CONTENT </div>
+<div class="content-container">
+  <app-box-content></app-box-content>
+  <div class="box-conteudo">
+    <app-resumo></app-resumo>
+  </div>
+  <div class="box-conteudo">
+    <div class="titulo-box">Discussões</div>
+    <app-form-topico></app-form-topico>
+    <!-- <app-criar-topico></app-criar-topico> -->
+    <div *ngFor="let discussao of discussoes; let i = index">
+      <app-card
+        [assunto]="discussao.assunto"
+        [autor]="discussao.autor"
+        [pergunta]="discussao.pergunta"
+        [index]="i"
+      ></app-card>
+    </div>
+  </div>
 </div>
