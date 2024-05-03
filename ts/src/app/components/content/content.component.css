@@ -1,9 +1,8 @@
 .content-container {
   padding: 1.25rem 2.25rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
 
   .titulo-trabalho {
     font-family: Roboto;
@@ -18,6 +17,27 @@
 h2 {
   padding: 0;
   margin: 0;
+}
+
+button {
+  background-color: #ed7839;
+  color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  height: 2.5rem;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #ff833f;
+  }
 }
 
 .content-box {
@@ -43,27 +63,6 @@ h2 {
     flex-direction: row;
     justify-content: end;
     gap: 8px;
-
-    button {
-      background-color: #ed7839;
-      color: #ffffff;
-      border-radius: 4px;
-      border: none;
-      height: 2.5rem;
-      padding: 0 12px;
-      display: flex;
-      align-items: center;
-      font-family: Roboto;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 18.75px;
-      text-align: center;
-
-      &:hover {
-        cursor: pointer;
-        background-color: #ff833f;
-      }
-    }
   }
   .citacao {
     font-family: Roboto;
@@ -90,18 +89,6 @@ h2 {
     text-align: left;
   }
 
-  .titulo-detalhe {
-    background-color: #fdf1eb;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    padding-left: 12px;
-    color: #4e4e4e;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 500;
-  }
-
   .conteudo-detalhe {
     margin-top: 18px;
     padding: 0 12px;
@@ -122,6 +109,158 @@ h2 {
       margin-top: 16px;
       font-size: 12px;
       color: #ada0a0;
+    }
+  }
+}
+
+.titulo-detalhe {
+  background-color: #fdf1eb;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  color: #4e4e4e;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.box-conteudo {
+  margin-top: 16px;
+  border: solid 1.5px #ececec;
+  border-radius: 3px 3px 0px 0px;
+
+  .box-discusao {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .box-resumo {
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 12px;
+    color: #5c5c5c;
+    p {
+      display: contents;
+      font-weight: 700;
+      color: #ed7839;
+
+      &:hover {
+        cursor: pointer;
+        background: #ed7839;
+      }
+    }
+  }
+  .informativo-discussao {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ed7839;
+  }
+
+  .frase-discussao {
+    margin: 0;
+    width: 39rem;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 400;
+    color: #595959;
+  }
+
+  .box-icone {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .btn-criar-topico {
+    background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
+    border-radius: 2px;
+    width: 8.25rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+      cursor: pointer;
+      background: linear-gradient(180deg, #eea64e 0%, #fc8840 90%);
+    }
+  }
+  .divisoria {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 1px;
+    background: #e7e7e7;
+  }
+
+  .card-discusao {
+    height: 9rem;
+    margin: 12px;
+    padding: 12px;
+    box-shadow: 0px 0px 8px 0px #0000001f;
+    border: 1px solid #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .titulo-pergunta {
+      margin: 0;
+      font-family: Quicksand;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      text-align: left;
+      color: #ed7839;
+    }
+
+    .nome-autor {
+      margin: 0;
+      font-family: Quicksand;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 15px;
+      text-align: left;
+      color: #5c5c5c;
+    }
+    .pergunta {
+      margin: 0;
+      font-family: Quicksand;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17.5px;
+      text-align: left;
+      color: #4d4d4d;
+    }
+
+    .box-btn-infos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .btn-favoritar {
+      width: 27px;
+      height: 19px;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .info-discussao {
+      color: #757575;
+      font-family: Segoe UI;
+      font-size: 14px;
+      font-weight: 350;
+      line-height: 18.62px;
+      text-align: left;
     }
   }
 }
