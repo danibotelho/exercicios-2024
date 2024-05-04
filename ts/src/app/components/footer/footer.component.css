@@ -1,6 +1,5 @@
 .footer {
-  height: 11rem;
-  background-color: #007bff;
-  color: #fff;
-  width: 100%;
+  padding-top: 12px;
+  display: flex;
+  justify-content: center;
 }
