@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-form-topico',
@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form-topico.component.css'],
 })
 export class FormTopicoComponent implements OnInit {
+  @Output() enviarEvent = new EventEmitter<void>();
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  enviar() {
+    this.enviarEvent.emit();
+  }
+  
 }

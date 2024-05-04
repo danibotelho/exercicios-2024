@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { BoxContentComponent } from './components/content/box-content/box-content.component';
 import { CriarTopicoComponent } from './components/content/criar-topico/criar-topico.component';
 import { FormTopicoComponent } from './components/content/form-topico/form-topico.component';
+import { CardRespostaComponent } from './components/content/card-resposta/card-resposta.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FormTopicoComponent } from './components/content/form-topico/form-topic
     ResumoComponent,
     FormTopicoComponent,
     CardComponent,
+    CardRespostaComponent,
     CriarTopicoComponent,
     FooterComponent,
   ],

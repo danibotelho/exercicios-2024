@@ -1,0 +1,19 @@
+<div
+  class="comments-container"
+  *ngFor="let resposta of respostas; let i = index"
+  [style.background]="resposta.tipoParticipante !== '' ? '#F8F8F8' :
+  '#FFFFFF'"
+>
+  <div class="infos">
+    <p class="nome">{{ resposta.nome }}</p>
+    <div *ngIf="resposta.tipoParticipante !== ''" class="mostrar-info">
+      <p class="tipo-participante">{{ resposta.tipoParticipante }}</p>
+      <img
+        src="{{ resposta.icon }}"
+        alt="icone-check"
+        style="height: 14px; width: 14px"
+      />
+    </div>
+  </div>
+  <p class="resposta">{{ resposta.resposta }}</p>
+</div>
