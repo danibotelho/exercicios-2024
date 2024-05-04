@@ -1,4 +1,4 @@
-.box-discusao {
+.box-criar-topico {
   padding: 12px;
   display: flex;
   flex-direction: column;
@@ -19,11 +19,29 @@
   display: flex;
   justify-content: center;
   gap: 4rem;
+
+  p {
+    margin: 0;
+    width: 100%;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 400;
+    color: #595959;
+    text-align: center;
+  }
+
+  a {
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #ed7839;
+  }
 }
 
 .btn-create-topic {
   background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
-  width: 8.25rem;
+  width: auto;
   height: 2rem;
   padding: 0 12px;
   display: flex;
@@ -38,14 +56,5 @@
   &:hover {
     cursor: pointer;
     background: linear-gradient(180deg, #eea64e 0%, #fc8840 90%);
-  }
-
-  .divisoria{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 1px;
-    background: #e7e7e7;
-    width: 100%;
   }
 }
