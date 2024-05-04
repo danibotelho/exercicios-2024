@@ -20,11 +20,11 @@ export class ResumoComponent implements OnInit {
     if (lerMenos?.style.display == 'none') {
       lerMenos.style.display = 'inline';
       lerMais!.style.display = 'none';
-      btnLeiaTexto!.innerHTML = 'Ver mais';
+      btnLeiaTexto!.innerHTML = 'ver mais';
     } else {
       lerMenos!.style.display = 'none';
       lerMais!.style.display = 'inline';
-      btnLeiaTexto!.innerHTML = 'Ver menos';
+      btnLeiaTexto!.innerHTML = 'ver menos';
     }
   }
 }
