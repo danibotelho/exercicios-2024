@@ -127,6 +127,7 @@ button {
 
 .box-conteudo {
   margin-top: 16px;
+  padding-bottom: 16px;
   border: solid 1.5px #ececec;
   border-radius: 3px 3px 0px 0px;
 
@@ -165,7 +166,7 @@ button {
   .btn-create-topic {
     background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
     border-radius: 2px;
-    width: 8.25rem;
+    width: auto;
     height: 2rem;
     display: flex;
     align-items: center;
@@ -182,6 +183,94 @@ button {
     justify-content: center;
     height: 2px;
     background: #e7e7e7;
-    width: 100%;
+    width: 1027px;
   }
 }
+
+.answered-topic {
+  height: 9rem;
+  margin: 12px;
+  padding: 12px;
+  box-shadow: 0px 0px 8px 0px #0000001f;
+  border: 1px solid #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+
+  p {
+    margin: 0;
+    width: 100%;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 400;
+    color: #595959;
+    text-align: center;
+  }
+
+  a {
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: #ed7839;
+  }
+
+
+  .ops-topic-subject {
+    margin: 0;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    color: #ed7839;
+  }
+
+  .nome-autor {
+    margin: 0;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+    color: #5c5c5c;
+  }
+  .pergunta {
+    margin: 0;
+    height: 35px;
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    text-align: left;
+    color: #4d4d4d;
+  }
+
+  .info-discussao {
+    color: #757575;
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 350;
+    text-align: left;
+  }
+
+  .box-btn-infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .btn-favoritar {
+    width: 27px;
+    height: 19px;
+    justify-content: center;
+    padding: 0;
+    background-color: #ed7839;
+  }
+}
+
+
