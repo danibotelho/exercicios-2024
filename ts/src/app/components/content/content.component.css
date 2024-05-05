@@ -163,7 +163,7 @@ button {
     gap: 4rem;
   }
 
-  .btn-create-topic {
+  /* .btn-create-topic {
     background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
     border-radius: 2px;
     width: auto;
@@ -176,7 +176,7 @@ button {
       cursor: pointer;
       background: linear-gradient(180deg, #eea64e 0%, #fc8840 90%);
     }
-  }
+  } */
   .divisoria {
     align-items: center;
     display: flex;
@@ -187,7 +187,7 @@ button {
   }
 }
 
-.answered-topic {
+.retorno-topico-criado {
   height: 9rem;
   margin: 12px;
   padding: 12px;
@@ -198,7 +198,6 @@ button {
   align-items: center;
   justify-content: center;
   gap: 12px;
-
 
   p {
     margin: 0;
@@ -218,8 +217,7 @@ button {
     color: #ed7839;
   }
 
-
-  .ops-topic-subject {
+  /* .ops-topic-subject {
     margin: 0;
     font-family: Quicksand;
     font-size: 16px;
@@ -227,7 +225,7 @@ button {
     line-height: 20px;
     text-align: left;
     color: #ed7839;
-  }
+  } */
 
   .nome-autor {
     margin: 0;
@@ -272,5 +270,3 @@ button {
     background-color: #ed7839;
   }
 }
-
-
