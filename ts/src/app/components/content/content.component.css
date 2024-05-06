@@ -163,20 +163,6 @@ button {
     gap: 4rem;
   }
 
-  /* .btn-create-topic {
-    background: linear-gradient(180deg, #feb254 0%, #f0813d 100%);
-    border-radius: 2px;
-    width: auto;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    &:hover {
-      cursor: pointer;
-      background: linear-gradient(180deg, #eea64e 0%, #fc8840 90%);
-    }
-  } */
   .divisoria {
     align-items: center;
     display: flex;
@@ -216,16 +202,6 @@ button {
     text-align: center;
     color: #ed7839;
   }
-
-  /* .ops-topic-subject {
-    margin: 0;
-    font-family: Quicksand;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: left;
-    color: #ed7839;
-  } */
 
   .nome-autor {
     margin: 0;
